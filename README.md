@@ -46,7 +46,6 @@ This repository contains SQL solutions to an analytical assessment based on a My
 # How to Run
 
 ### Prerequisites
-- Python (for running supporting scripts, if any)
 - MySQL installed locally
 - MySQL database imported from `adashi_assessment.sql`
 
