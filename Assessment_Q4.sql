@@ -3,7 +3,7 @@ USE adashi_staging;
 WITH customer_summary AS (
     SELECT
         u.id AS customer_id,
-        u.name,
+        CONCAT(u.first_name, ' ', u.last_name) AS name,
         TIMESTAMPDIFF(MONTH, u.date_joined, CURDATE()) AS tenure_months,
         COUNT(s.id) AS total_transactions,
         SUM(s.confirmed_amount) / 100.0 AS total_transaction_value_kobo

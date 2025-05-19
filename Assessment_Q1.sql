@@ -20,7 +20,7 @@ total_deposits AS (
 
 SELECT
     u.id AS owner_id,
-    u.name,
+    CONCAT(u.first_name, ' ', u.last_name) AS name,
     sp.savings_count,
     ip.investment_count,
     td.total_deposits
